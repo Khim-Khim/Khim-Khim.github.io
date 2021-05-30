@@ -9,10 +9,9 @@
   
   .container {
     display: grid;
-    grid-template-columns: 0.1fr 6fr 0.1fr ;
-    grid-template-rows: 0.2fr 1.5fr 0.2fr ;
     grid-template-areas:
       "nav nav nav "
+      ". content ."
       ". main  ."
       "footer footer footer ";
     grid-gap: 0.2rem;
@@ -36,34 +35,17 @@
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
   }
-  
-  #sidebar {
-    background: #18ffff;
-    grid-area: sidebar;
+  .content {
+    background: #84ffff;
+    grid-area: content;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
   }
+
   
-  #content1 {
-    background: #6fffd2;
-    grid-area: content1;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-  }
+
   
-  #content2 {
-    background: #64ffda;
-    grid-area: content2;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-  }
-  
-  #content3 {
-    background: #73ffba;
-    grid-area: content3;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-  }
+
   
   footer {
     background: #1de9b6;
@@ -1413,5 +1395,19 @@
 .icb0
 {
 	margin-left: 20px;
+}
+
+/* navbar */
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+.example6 .navbar-brand{ 
+  background: url(https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png) center / contain no-repeat;
+  width: 200px;
 }
  

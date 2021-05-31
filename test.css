@@ -3,9 +3,7 @@
   --main-padding: 5px;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-}
+
 
 
 .container {
@@ -34,7 +32,17 @@ nav {
 }
 
 main {
-  
+  display: grid;
+  grid-template-areas:
+  "content1"
+  "real1"
+  "content2"
+  "real2"
+  "content3"
+  "real3"
+  "content4"
+  "real4"
+  ;
   grid-area: main;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -42,7 +50,7 @@ main {
 
 
 footer {
-  background: #1de9b6;
+  background: black;
   grid-area: footer;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -51,30 +59,58 @@ footer {
   background: #1de9b6;
   grid-area: content;
 }
-
-a {
-  text-align: center;
-  display: block;
-  font-family: inherit;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 1rem;
+.content1{
+ 
+  grid-area: contnent1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  
+}
+.real1 {
+  
+  grid-area: real1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 
-@media only screen and (max-width: 550px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-    grid-template-areas:
-      "nav"
-      "sidebar"
-      "main"
-      "content1"
-      "content2"
-      "content3"
-      "footer";
-  }
+.content2{
+  
+  grid-area: contnent2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
+.real2 {
+  
+  grid-area: real2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.content3{
+  
+  grid-area: contnent3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.real3{
+  
+  grid-area: real3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.content4{
+  
+  grid-area: contnent4;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.real4 {
+ 
+  grid-area: real4;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+
 /* main */
 
 @import "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";

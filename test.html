@@ -21,7 +21,97 @@
 </head>
 <body>
     <!-- cu TC -->
-    <nav>Navbar</nav>
+    <nav>
+        <div class="navbar">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a class="tc" href="test.html">
+                        <img class="logo" src="Hinhanh/Logo2-2.jpg">
+                    </a>
+            </div>
+            </div>
+            <div class="grid-container-1">
+                <div class="grid-item-1">
+
+                    <button class="btn-dn-dk" onclick="document.getElementById('id01').style.display='block'">Đăng Nhập</button>
+        <div id="id01" class="modal">   
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Tắt">&times;</span>
+                <img src="Hinhanh/Logo.jpg" alt="Avatar" class="avatar">
+              </div>
+              <div class="container-1">
+                <label for="uname"><b>Tên Đăng Nhập:</b></label>
+                <input type="text" placeholder="Nhập Tên Đăng Nhập" name="uname" required>
+                <br>
+                <label for="psw" style="margin-left:56px"><b>Mật Khẩu:</b></label>
+                <input type="password" placeholder="Nhập Mật Khẩu" name="psw" required>
+                  <br>
+                <button type="submit" style="color: rgb(0, 0, 0);">Đăng Nhập</button>
+                <label style="margin-right: 240px;">
+                    <input type="checkbox" checked="checked" name="remember"> Nhớ Mật Khẩu
+                  </label>
+                </div>
+                <div class="container-1" style="background-color:#f1f1f1;">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Hủy</button>
+                  <span class="psw">Quên <a href="#">Mật Khẩu?</a></span>
+                </div>
+              </form>
+            </div>
+            <script>
+                var modal = document.getElementById('id01');
+                window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+            </script>
+            <div class="border"></div>
+            <button class="btn-dn-dk" onclick="document.getElementById('id02').style.display='block'">Đăng Ký</button>
+        <div id="id02" class="modal">   
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Tắt">&times;</span>
+                <img src="Hinhanh/Logo.jpg" alt="Avatar" class="avatar">
+              </div>
+              <div class="container-1">
+                <label for="uname"><b>Tên Đăng Nhập:</b></label>
+                <input type="text" placeholder="Nhập Tên Đăng Nhập" name="uname" required>
+                <br>
+                <label for="psw" style="margin-left:56px"><b>Mật Khẩu:</b></label>
+                <input type="password" placeholder="Nhập Mật Khẩu" name="psw" required>
+                <br>
+                <label for="psw"><b>Nhập Lại Mật Khẩu:</b></label>
+                <input type="password" placeholder="Nhập Lại Mật Khẩu" name="psw" required style="margin-right: 42px;">
+                <br>
+                <button type="submit" style="color: rgb(0, 0, 0); margin-right: 430px;">Đăng ký</button>
+                </div>
+
+                <div class="container-1" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn" style="margin-right:448px">Hủy</button>
+                </div>
+              </form>
+            </div>
+            <script>
+                var modal = document.getElementById('id02');
+                window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+            </script>
+        </div>
+
+
+        </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <!-- cua TL -->
        <div class="content">

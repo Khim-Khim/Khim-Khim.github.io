@@ -1,201 +1,82 @@
 :root {
-    --main-radius: 5px;
-    --main-padding: 5px;
-  }
-  
-  body {
-    font-family: "Inter", sans-serif;
-  }
-  a.tc
-  {
-    text-decoration: none;
-    margin: auto;
-  }
-  
-  .navbar
-    {
-		height: 100px;
-		display: grids;
-		background-color: rgb(0, 0, 0);
-	}
-  .logo
-  {
-    padding: auto;
-    width: 130px;
-    height: 80px;
-  }
-  .btn-dn-dk
-  {
-    font-family: 'Times New Roman', Times, serif;
-    margin:0%;
-    background: transparent;
-    border: none;
-    color: white;
-  }
-  .btn-dn-dk:hover
-  {
-    color:rgb(221, 59, 59);
-  }
-  
-  .border
-  {
-    background-color: white;
-    padding-left: 1px;
-  }
-  
-  input[type=text], input[type=password] {
-    width: 100%;
-    height: 20%;
-    padding: 12px 20px;
-    margin: 8px 0;
-  
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-  }
-  
-  .imgcontainer {
-    text-align: center;
-    position: relative;
-  }
-  img.avatar {
-    width: 130px;
-    height: 80px;
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
 
-  }
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: grid;
   
+  grid-template-columns: 0.1fr 6fr 0.1fr ;
+  
+  grid-template-areas:
+    
+    "content content content "
+    ". main ."
+    ;
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #004d40;
+  text-align: center;
+}
+
+nav {
+  background: #a7ffeb;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+main {
+  
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+
+footer {
+  background: #1de9b6;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.content {
+  background: #1de9b6;
+  grid-area: content;
+}
+
+a {
+  text-align: center;
+  display: block;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 550px) {
   .container {
-    padding-top: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
   }
-  
-  span.psw {
-    float: right;
-    padding-top: 16px;
-  }
-  .grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #000000;
-    padding: auto;
-    
-  }
-  .grid-item {
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    font-size: 20px;
-    text-align: center;
-  }
-  .grid-container-1 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #000000;
-    padding: auto;
-  }
-  .grid-item-1 {
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    font-size: 20px;
-    text-align: center;
-  }
-  .grid-container-2 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #000000;
-    padding: auto;
-  }
-  .grid-item-2 {
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    font-size: 20px;
-    text-align: center;
-  }
+}
+/* main */
 
-
-  .modal {
-    display: none; 
-    position: re; 
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 20%; 
-    height: 20%; 
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4); 
-    padding-top: 60px;
-  }
-  
-  
-  .modal-content {
-    background-color: #fefefe;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: red;
-    cursor: pointer;
-  }
-  
-  .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-  }
-
-  nav {
-    background: #84ffff;
-    grid-area: nav;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-  }
-  
-  main {
-    
-    grid-area: main;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-  }
-  .content {
-    background: #84ffff;
-    grid-area: content;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-  }
-
-  
-
-  
-
-  
-  footer {
-    background: #1de9b6;
-    grid-area: footer;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-  }
-  
-  a {
-    text-align: center;
-    display: block;
-    font-family: inherit;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 1rem;
-  }
-  @import "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
 .fa-spin-fast {
   -webkit-animation: fa-spin-fast 0.2s infinite linear;
   animation: fa-spin-fast 0.2s infinite linear;
@@ -280,7 +161,7 @@
   padding: 10px 16px 10px 90px;
 }
 .material-card.mc-active h2:before {
-  top: 0px;
+  top: 0;
 }
 .material-card.mc-active h2:after {
   bottom: -16px;
@@ -423,9 +304,9 @@
   transition: all 0.3s;
 }
 .material-card.mc-active .img-container {
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  border-radius: 10%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
   left: 0;
   top: 12px;
   width: 60px;
@@ -1433,13 +1314,35 @@
 .material-card.Blue-Grey.mc-active .mc-btn-action {
   border-color: #ECEFF1;
 }
+body {
+  background-color: #ECEFF1;
+  color: #37474F;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+h1,
+h2,
+h3 {
+  font-weight: 200;
+}
+
 .row {
- padding-left: 20px;
- padding-right:20px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 
-/* CSS Document */
+
+
+
+
+
+
+
+/* footer */
 .footerabc
 {
 	position: fixed;
@@ -1529,6 +1432,3 @@
 {
 	margin-left: 20px;
 }
-  
-
- 
